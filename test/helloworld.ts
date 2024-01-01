@@ -1,5 +1,5 @@
 import { describe, it  } from "@jest/globals"
-import { helloWorld } from '@self'
+import { helloWorld } from '../src'
 
 describe('helloWorld', () => {
   it('works', () => {

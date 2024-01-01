@@ -14,5 +14,5 @@ node_modules
 .prettierrc
 .prettierignore
 
-jest.config.js
-rollup.config.js
+jest.config.*s
+rollup.config.*s
