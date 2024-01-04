@@ -23,6 +23,7 @@
     "./src/**/*.ts"
   ],
   "exclude": [
+    "rollup.config.ts",
     "node_modules"
   ],
   "references": [
