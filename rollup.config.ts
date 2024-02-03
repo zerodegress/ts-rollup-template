@@ -1,13 +1,17 @@
 import { RollupOptions } from 'rollup'
 import typescript from '@rollup/plugin-typescript'
 
-export default [{
+const config: RollupOptions = {
   input: './src/index.ts',
   output: {
-    file: './dist/index.min.js',
+    file: './dist/index.js',
     format: 'esm',
   },
   plugins: [
-    typescript(),
-  ]
-}] as RollupOptions
+    typescript({
+      tsconfig: './tsconfig.build.json',
+    }),
+  ],
+}
+
+export default config

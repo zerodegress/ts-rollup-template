@@ -130,4 +130,8 @@ dist
 .pnp.*
 
 /dist
+/types
 .vscode/*
+.history
+.cache
+*.cache

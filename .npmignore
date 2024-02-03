@@ -16,3 +16,4 @@ node_modules
 
 jest.config.*s
 rollup.config.*s
+tsconfig.test.json

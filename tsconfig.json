@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2022",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "isolatedModules": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -10,25 +12,9 @@
     "lib": [
       "ESNext"
     ],
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@self": [
-        "./src/index.ts"
-      ]
-    }
   },
   "include": [
-    "./src/**/*.ts"
-  ],
-  "exclude": [
     "rollup.config.ts",
-    "node_modules"
+    "jest.config.ts",
   ],
-  "references": [
-    {
-      "path": "tsconfig.node.json"
-    }
-  ]
 }
